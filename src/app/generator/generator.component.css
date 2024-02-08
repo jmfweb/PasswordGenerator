@@ -1,0 +1,31 @@
+.header {
+	margin-top: 40px;
+}
+
+h2 {
+	font-size: 1.5em; /* Tamaño de fuente mediano */
+	color: #777; /* Color del texto */
+	text-align: center; /* Centrar el texto */
+	margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo de hover para h2 */
+h2:hover {
+	color: #555; /* Cambiar color al pasar el ratón */
+	cursor: pointer; /* Cambiar cursor al pasar el ratón */
+}
+
+input {
+	border-radius: 50px;
+	width: 500px;
+	height: 50px;
+}
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
