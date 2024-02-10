@@ -2,10 +2,18 @@
 
 This project was made with Angular v17 and Tailwind CSS.
 
-## Development server
+# Status
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+🛠️ In progress
+
+# Deployment instructions
+
+You must have Angular installed on your computer.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Run the app
+
+Run `npm start` to execute the app. Navigate to the localhost link specified in the terminal output.
