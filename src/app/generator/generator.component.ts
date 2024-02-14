@@ -11,9 +11,10 @@ export class GeneratorComponent implements OnInit {
 
 	ngOnInit() {
 		function generatePassword(): string {
-			const length: number = Math.floor(Math.random() * (12 - 8 + 1)) + 8; // Generates a random length between 8 and 12 characters
+			const length: number = Math.floor(Math.random() * (17 - 15 + 1)) + 15; // Generates a random length between 15 and 17 characters
+
 			const characters: string =
-				"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[]|\\;:'\",.<>?";
+				"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[]|\\;:'\",.<>?!@#$%^&*()_+{}[]|";
 			let password: string = "";
 			for (let i: number = 0; i < length; i++) {
 				const randomChar: string = characters.charAt(Math.floor(Math.random() * characters.length));
@@ -35,5 +36,27 @@ export class GeneratorComponent implements OnInit {
 			"generateButton"
 		) as HTMLButtonElement;
 		generateButton.addEventListener("click", showPassword);
+
+		function copyToClipboard(inputElement: HTMLInputElement): void {
+			// Select the content of the input
+			inputElement.select();
+
+			// Copy to clipboard
+			navigator.clipboard
+				.writeText(inputElement.value)
+				.then(() => {
+					alert("Password copied to clipboard!");
+				})
+				.catch((error) => {
+					console.error("Error copying text to clipboard:", error);
+				});
+		}
+
+		const inputElement = document.getElementById("password") as HTMLInputElement;
+		const copyButton = document.getElementById("copyButton") as HTMLButtonElement;
+
+		copyButton.addEventListener("click", () => {
+			copyToClipboard(inputElement);
+		});
 	}
 }

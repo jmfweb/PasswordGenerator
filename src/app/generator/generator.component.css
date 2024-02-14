@@ -29,3 +29,39 @@ html {
 	justify-content: center;
 	align-items: center;
 }
+
+input#password {
+	font-size: 25px;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+button#copyButton {
+	display: inline-block;
+}
+
+div.passwordAndCopyContainer {
+	display: flex;
+	justify-content: center;
+}
+@media screen and (width <= 510px) {
+	.container {
+		width: 400px;
+	}
+
+	input#password {
+		width: auto;
+	}
+}
+
+@media screen and (width <= 320px) {
+	.container {
+		width: 250px;
+	}
+
+	input#password {
+		width: 200px;
+		font-size: 15px;
+	}
+}
