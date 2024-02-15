@@ -1,14 +1,14 @@
 # PasswordGenerator
 
-This project was made with Angular v17 and Tailwind CSS.
+This project was made with Angular 17 and Tailwind CSS.
 
 # Status
 
-🛠️ In progress
+✅ First stable version
 
 # Deployment instructions
 
-You must have Angular installed on your computer.
+You must have Angular installed on your computer to deploy this project.
 
 ## Build
 
